@@ -1,0 +1,8 @@
+﻿@model IEnumerable<Article>
+
+<ul class="list-group">
+    @foreach(var a in Model)
+    {
+        @Html.Partial("ProductSummary", a)
+    }
+</ul> 
